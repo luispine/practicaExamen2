@@ -3,6 +3,9 @@ import { Formula } from '../formula/formula.component'
 import { UiComponent } from './ui.component';
 import { By } from '@angular/platform-browser';
 
+
+
+
 describe('UiComponent', () => {
   let component: UiComponent;
   let fixture: ComponentFixture<UiComponent>;
@@ -22,7 +25,7 @@ describe('UiComponent', () => {
   });
 
 
-  
+
   it('Should call Formula', () => {
     spyOn(component, 'getFormula');
     component.getFormula();
