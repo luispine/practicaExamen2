@@ -18,4 +18,13 @@ describe('FormulaComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('debe regresar el resultado correcto', () => {
+    component.base = 5;
+    component.altura = 8;
+
+    const resultado = component.calcularAreaTest();
+    expect(resultado).toEqual(20);
+  });
+
 });
