@@ -1,1 +1,44 @@
-<p>ui works!</p>
+<main class="Contenedor_Principal">
+    <section class="Menu_Opciones">
+      <div class="conjunto_botones">
+        <button>
+          Extra 2023
+        </button>
+      </div>
+    </section>
+  
+    <section class="Pantalla_Informacion">
+      <div class="opciones_Botones">
+  
+        <label for="">Ingrese el valor de la altura </label>
+        <input (input)="Actualizar_altura($event)" [value]="altura" type="number" placeholder="Valor de x0" required name="Input-x0" id="operator1" class="operator1" name="operator1" />
+  
+        <label for="">Ingrese el valor de la base: </label>
+        <input (input)="Actualizar_base($event)" [value]="base" type="number" placeholder="Valor de x1" required name="Input-x1" id="operator2" class="operator2" name="operator2" />
+  
+        <button class="ObtenerResultado" (click)="getFormula()">Calcular Resultado</button>
+  
+      </div>
+  
+      <div class="opciones_Resultados">
+  
+  
+        <div class="opcion_Resultado">
+          <p>Fórmula: ( Altura * Base ) / 2</p>
+        </div>
+  
+        <div class="opcion_Resultado">
+          <p class="Resultado" style="color: black; font-size: 120%;">Resultado <span style="color: red"> {{resultado}}</span>  </p>
+        </div>
+  
+      </div>
+    </section>
+  
+    <section class="Pie_Pagina">
+      <div class="conjunto_botones">
+        <button>
+          Oswaldo Corona Perez
+        </button>
+      </div>
+    </section>
+  </main>
