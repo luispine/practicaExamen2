@@ -21,6 +21,8 @@ describe('UiComponent', () => {
     expect(component).toBeTruthy();
   });
 
+
+  
   it('Should call Formula', () => {
     spyOn(component, 'getFormula');
     component.getFormula();
